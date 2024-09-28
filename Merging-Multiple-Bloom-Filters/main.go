@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/willf/bloom"
 )
 
@@ -21,4 +23,16 @@ func main() {
 		bf2.Add([]byte(item))
 	}
 
+	// Merge the second filter into the first one
+	bf1.Merge(bf2)
+
+	// Test data after merging
+	tests := []string{"apple", "banana", "grape", "watermelon"}
+	for _, test := range tests {
+		if bf1.Test([]byte(test)) {
+			fmt.Printf("%s might be in the filter.\n", test)
+		} else {
+			fmt.Printf("%s is definitely not in the filter.\n", test)
+		}
+	}
 }
