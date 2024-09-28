@@ -1,0 +1,42 @@
+=============== Sep 28, 2024 (+0330) ===============
+17:33:25.191455 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:33:25.204905 db@open opening
+17:33:25.205930 version@stat F·[] S·0B[] Sc·[]
+17:33:25.210124 db@janitor F·2 G·0
+17:33:25.210183 db@open done T·5.252917ms
+=============== Sep 28, 2024 (+0330) ===============
+17:39:17.078231 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:39:17.080015 version@stat F·[] S·0B[] Sc·[]
+17:39:17.080060 db@open opening
+17:39:17.080227 journal@recovery F·1
+17:39:17.080996 journal@recovery recovering @1
+17:39:17.085151 memdb@flush created L0@2 N·5 S·164B "key1,v4":"key4,v5"
+17:39:17.085446 version@stat F·[1] S·164B[164B] Sc·[0.25]
+17:39:17.102287 db@janitor F·3 G·0
+17:39:17.102389 db@open done T·22.301584ms
+17:39:17.102891 db@close closing
+17:39:17.103104 db@close done T·203.583µs
+=============== Sep 28, 2024 (+0330) ===============
+17:40:06.590075 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:40:06.591273 version@stat F·[1] S·164B[164B] Sc·[0.25]
+17:40:06.591305 db@open opening
+17:40:06.591439 journal@recovery F·1
+17:40:06.592021 journal@recovery recovering @3
+17:40:06.601233 memdb@flush created L0@5 N·5 S·164B "key1,v10":"key4,v11"
+17:40:06.601541 version@stat F·[2] S·328B[328B] Sc·[0.50]
+17:40:06.617923 db@janitor F·4 G·0
+17:40:06.618006 db@open done T·26.677458ms
+17:40:06.618645 db@close closing
+17:40:06.618807 db@close done T·150µs
+=============== Sep 28, 2024 (+0330) ===============
+17:40:13.888427 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:40:13.890630 version@stat F·[2] S·328B[328B] Sc·[0.50]
+17:40:13.890708 db@open opening
+17:40:13.891001 journal@recovery F·1
+17:40:13.892163 journal@recovery recovering @6
+17:40:13.897279 memdb@flush created L0@8 N·5 S·175B "key1,v16":"key4,v17"
+17:40:13.897646 version@stat F·[3] S·503B[503B] Sc·[0.75]
+17:40:13.911477 db@janitor F·5 G·0
+17:40:13.911527 db@open done T·20.791958ms
+17:40:53.201696 db@close closing
+17:40:53.202736 db@close done T·1.034833ms
