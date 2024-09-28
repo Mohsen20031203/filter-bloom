@@ -14,4 +14,14 @@ func main() {
 	for i := 0; i < 1_000_000; i++ {
 		filter.Add([]byte(fmt.Sprintf("item%d", i)))
 	}
+
+	// Check if a few items are present in the filter
+	tests := []string{"item500", "item150000", "non_existent_item"}
+	for _, test := range tests {
+		if filter.Test([]byte(test)) {
+			fmt.Printf("%s is possibly in the set.\n", test)
+		} else {
+			fmt.Printf("%s is definitely not in the set.\n", test)
+		}
+	}
 }
