@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math/rand"
+	"os"
 	"time"
 
 	"github.com/willf/bloom"
@@ -22,4 +23,16 @@ func main() {
 		fmt.Printf("Added %s to Bloom filter\n", randomValue)
 	}
 
+	// Save the Bloom filter to a file
+	file, err := os.Create("bloomfilter.dat")
+	if err != nil {
+		fmt.Printf("Error creating file: %v\n", err)
+		return
+	}
+	defer file.Close()
+
+	_, err = bf.WriteTo(file)
+	if err != nil {
+		fmt.Printf("Error writing Bloom filter to file: %v\n", err)
+	}
 }
